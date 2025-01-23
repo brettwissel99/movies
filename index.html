@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Rating Tracker</h1>
+    </header>
+
+    <main>
+        <section id="rating-section">
+            <h2>Rate a Movie</h2>
+            <input type="text" id="movie-name" placeholder="Enter movie name" required>
+            <input type="number" id="movie-rating" min="1" max="10" placeholder="Rate (1-10)" required>
+            <button onclick="addRating()">Submit Rating</button>
+        </section>
+
+        <section id="movie-list">
+            <h2>Your Rated Movies</h2>
+            <ul id="movie-list-items"></ul>
+        </section>
+
+        <section id="recommendations">
+            <h2>Movie Recommendations</h2>
+            <ul id="recommendation-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Movie Rating Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
